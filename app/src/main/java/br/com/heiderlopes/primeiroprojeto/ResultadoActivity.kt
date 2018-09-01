@@ -25,36 +25,30 @@ class ResultadoActivity : AppCompatActivity() {
 
     private fun calcularIMC(peso: Double, altura: Double) {
         val imc = peso/(altura * altura)
+        tvMVC.text = imc.format(0)
 
         if(imc < 17){
-            tvMVC.text = imc.format(0)
             setImagem(R.drawable.magreza)
-            tvDescricao.setText("Magraza")
+            tvDescricao.text = getString(R.string.label_magreza)
         }else if(imc < 18.5){
-            tvMVC.text = imc.format(0)
             setImagem(R.drawable.abaixo)
-            tvDescricao.setText("Abaixo do peso")
+            tvDescricao.text = getString(R.string.label_abaixo_peso)
         }else if( imc < 24.9 ){
-            tvMVC.text = imc.format(0)
             setImagem(R.drawable.ideal)
-            tvDescricao.setText("levemente")
+            tvDescricao.text = getString(R.string.label_peso_ideal)
         } else if( imc < 29.9){
-            tvMVC.text = imc.format(0)
             setImagem(R.drawable.sobre)
-            tvDescricao.setText("Acima do peso")
+            tvDescricao.text = getString(R.string.label_sobrepeso)
         } else if ( imc < 34.9){
-            tvMVC.text = imc.format(0)
             setImagem(R.drawable.obesidade)
-            tvDescricao.setText("Obesidade 1")
+            tvDescricao.text = getString(R.string.label_obesidade1)
         }
         else if ( imc < 39.9){
-            tvMVC.text = imc.format(0)
             setImagem(R.drawable.obesidade)
-            tvDescricao.setText("Obesidade 2")
+            tvDescricao.text =getString(R.string.label_obesidade2)
         }else{
-            tvMVC.text = imc.format(0)
             setImagem(R.drawable.obesidade)
-            tvDescricao.setText("Obesidade 3")
+            tvDescricao.text = getString(R.string.label_obesidade3)
 
         }
 

@@ -9,4 +9,11 @@
     <string name="botao_limpar">Clean</string>
     <string name="label_titulo_resultado">Your IMC is:</string>
     <string name="label_rodape">Developed by MIM</string>
+    <string name="label_magreza">Magraza</string>
+    <string name="label_abaixo_peso">Abaixo do peso</string>
+    <string name="label_peso_ideal">Peso ideal</string>
+    <string name="label_sobrepeso">Levemente</string>
+    <string name="label_obesidade1">Obesidade 1</string>
+    <string name="label_obesidade2">Obesidade 2</string>
+    <string name="label_obesidade3">Obesidade 3</string>
 </resources>
