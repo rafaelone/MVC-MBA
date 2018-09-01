@@ -23,6 +23,12 @@ class ResultadoActivity : AppCompatActivity() {
 
     }
 
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
+    }
+
     private fun calcularIMC(peso: Double, altura: Double) {
         val imc = peso/(altura * altura)
         tvMVC.text = imc.format(0)
