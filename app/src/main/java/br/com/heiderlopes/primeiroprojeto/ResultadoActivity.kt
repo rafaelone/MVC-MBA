@@ -13,7 +13,7 @@ class ResultadoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resultado)
-
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         val peso = intent.extras.getString(ConstantesExtra.KEY_PESO)
         val altura = intent.extras.getString(ConstantesExtra.KEY_ALTURA)
 
